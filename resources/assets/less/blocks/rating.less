@@ -1,0 +1,31 @@
+.rating-block {
+    ul {
+        li {
+            color: #d2d2d2;
+            &.selected {
+                color: @bg-footer;
+            }
+        }
+    }
+    &.level {
+        &-1 {
+            .selected {
+                color: #006633;
+            }
+        }
+        &-2 {
+            .selected {
+                color: #0066cc;
+            }
+        }
+        &-3 {
+            .selected {
+                color: @bg-orange;
+            }
+        }
+    }
+}
+
+.rating {
+    .rating-block;
+}

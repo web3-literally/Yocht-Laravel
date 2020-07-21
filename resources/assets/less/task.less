@@ -1,0 +1,99 @@
+.dashboard-tasks {
+    .select-member-item {
+        display: flex;
+        align-items: flex-start;
+        align-self: center;
+
+        img {
+            border-radius: 2px;
+        }
+
+        .name {
+            margin-left: 10px;
+        }
+    }
+
+    .top-panel {
+        display: flex;
+        margin-bottom: 20px;
+        .column {
+            margin-right: 20px;
+            &:last-child {
+                margin-right: 0;
+            }
+            flex: 50%;
+            .dropdown {
+                .btn-group-dropdown;
+                label {
+                    margin: 0;
+                }
+                margin-right: 15px;
+            }
+            .filter-section {
+                flex: 1;
+                #set_as {
+                    width: 150px;
+                }
+                #priority {
+                    width: 150px;
+                    option {
+                        &[value=low] {
+                            color: #fff;
+                            background: #0B9F5D;
+                        }
+
+                        &[value=medium] {
+                            color: #fff;
+                            background: #00CED1;
+                        }
+
+                        &[value=high] {
+                            color: #fff;
+                            background: #DC5341;
+                        }
+                    }
+                }
+                .search-section {
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+
+    .data-section {
+        .actions {
+            .btn-group {
+                display: inline-block;
+            }
+            .btn {
+                background: transparent;
+                color: @bg-orange;
+            }
+        }
+        .priority-badge {
+            font-size: 12px;
+            border-radius: 3px;
+            font-weight: 700;
+            line-height: 1;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: baseline;
+            padding: 0.25em 0.4em;
+            display: inline-block;
+            color: #fff;
+            background: #ececec;
+
+            &.low {
+                background: #0B9F5D;
+            }
+
+            &.medium {
+                background: #00CED1;
+            }
+
+            &.high {
+                background: #DC5341;
+            }
+        }
+    }
+}

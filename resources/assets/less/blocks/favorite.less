@@ -1,0 +1,23 @@
+.favorite-button {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    border-radius: 50%;
+    font-size: 22px;
+    background: none;
+    height: 50px;
+    width: 50px;
+    color: @bg-orange;
+    outline: none;
+    &:focus {
+        -webkit-box-shadow: 0 0 0 0.2rem fadein(@bg-orange, 40%);
+        -moz-box-shadow: 0 0 0 0.2rem fadein(@bg-orange, 40%);
+        box-shadow: 0 0 0 0.2rem fadein(@bg-orange, 40%);
+    }
+}
+
+.favorite-block {
+    button {
+        .favorite-button;
+    }
+}

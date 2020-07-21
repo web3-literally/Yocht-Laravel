@@ -1,0 +1,1 @@
+<a href="{{ route('home') }}">{{ Setting::get('copyright') }}</a> © @php echo date('Y') @endphp. All Rights Reserved. <a href="{{ URL::to('terms-of-use') }}">Terms of Use</a> | <a href="{{ URL::to('privacy-policy') }}">Privacy Policy</a>

@@ -1,0 +1,30 @@
+.business-categories {
+    li {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-flow: row dense;
+        grid-auto-columns: minmax(30px, 100px);
+        margin-bottom: 10px;
+
+        span {
+            &.label {
+                background: #f3f7f8;
+                padding: 8px 14px;
+                grid-column: 1 / span 1;
+                /*width: 100%;
+                display: block;*/
+            }
+        }
+
+        button {
+            grid-column: 2 / span 1;
+        }
+
+        .nested {
+            grid-column: 1 / span 2;
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+    }
+}

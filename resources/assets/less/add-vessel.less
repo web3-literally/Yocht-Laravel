@@ -1,0 +1,60 @@
+.dashboard.create-vessel,
+.dashboard.create-tender{
+    .inner main {
+        .main-container {
+            margin-top: 110px;
+            margin-bottom: 110px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            background-color: #fff;
+            .left-bg {
+                background-image: url(./../../img/frontend/create-vessel-left-bg.png);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                min-height: 400px;
+            }
+            .content {
+                padding: 60px;
+                &.vessel-content {
+                    padding: 0;
+                    .nav {
+                        margin: 20px 20px 40px 20px;
+                    }
+                }
+                .nav {
+                    margin-bottom: 40px;
+                    a {
+                        font-size: 32px;
+                    }
+                }
+                label.btn,
+                input:not([type="submit"]),
+                select {
+                    width: 100%;
+                    background-color: rgb(243, 247, 248) !important;
+                    font-size: 16px !important;
+                    border-width: 0px;
+                    color: @bg-footer;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    border-radius: 5px;
+                }
+                .input-group {
+                    > input, > select {
+                        width: auto;
+                    }
+                }
+            }
+            .has-error{
+                input,select,.select2,.select2-container,.select, textarea{
+                    border:1px solid #f00 !important;
+                    &:hover{
+                        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
+                        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
+                    }
+                }
+            }
+        }
+    }
+}

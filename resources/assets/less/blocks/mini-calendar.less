@@ -1,0 +1,94 @@
+.mini-calendar {
+    .calendar {
+        width: 375px;
+        min-height: 362px;
+        background-color: rgb(29, 68, 96);
+        .fc-button-group,
+        .fc button {
+            display: block;
+        }
+    }
+    .fc {
+        th, td {
+            border-top: #ccc!important
+        }
+        td {
+            background: none !important;
+            border: 0!important;
+        }
+        color: #fff;
+        .fc-bg {
+            z-index: -1;
+            display: block;
+        }
+        thead {
+            background: none !important;
+            .fc-head-container {
+                background: none !important;
+                .fc-row {
+                    background: none !important;
+                    .fc-day-header {
+                        background: none !important;
+                        border-width: 0 !important;
+                        height: 38px;
+                    }
+                }
+            }
+        }
+        tbody {
+            background: none !important;
+            .fc-row {
+                background: none !important;
+                border-color: rgba(255, 255, 255, .1) !important;
+                vertical-align: middle;
+                text-align: center;
+                border-left: 0;
+                border-right: 0;
+                .fc-content-skeleton {
+                    cursor: pointer;
+                    height: 42px;
+                    thead {
+                        td {
+                            border-top: 1px solid rgba(255, 255, 255, .1)!important;
+                        }
+                    }
+                    tbody {
+                        tr:last-child {
+                            td {
+                                padding-bottom: 0;
+                            }
+                        }
+                    }
+                    .fc-day-top {
+                        text-align: center;
+                        .fc-day-number {
+                            float: none;
+                            line-height: 41px;
+                        }
+                        &.fc-today {
+                            background-color: rgba(255, 255, 255, .1)!important;
+                        }
+                        &.fc-state-highlight {
+                            background-color: @bg-orange!important;
+                        }
+                    }
+                    .fc-event-container {
+                        position: relative;
+                        .fc-event {
+                            pointer-events: none;
+                            background: #fff !important;
+                            border: 0;
+                            width: 3px;
+                            height: 5px;
+                            position: absolute;
+                            top: -39px;
+                            right: 3px;
+                            display: block;
+                            overflow: hidden;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

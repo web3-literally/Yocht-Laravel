@@ -1,0 +1,56 @@
+// CALENDAR
+.bar-calendar-widget {
+    position: relative;
+    h4 {
+        position: absolute;
+        left: 30px;
+        line-height: 70px;
+        color: #fff;
+        font-family: 'Futura Book';
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .fc-toolbar.fc-header-toolbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 20px 5px;
+        margin: 0;
+        h2 {
+            font-size: 17px;
+            color: #fff;
+            font-family: 'Futura Book', sans-serif;
+        }
+        > .fc-center,
+        > .fc-clear {
+            display: none!important;
+        }
+        > .fc-right {
+            > div {
+                display: flex;
+                align-items: flex-end;
+            }
+        }
+        button {
+            display: block;
+            background: none;
+            box-shadow: none;
+            border: 0;
+            outline: none;
+            font-size: 12px;
+            > span {
+                .general-transition;
+                color: #fff;
+            }
+            &:hover {
+                span {
+                    text-shadow: 0px 0px 10px #fff;
+                }
+            }
+        }
+    }
+
+    .reminders-calendar {
+        .mini-calendar;
+    }
+}

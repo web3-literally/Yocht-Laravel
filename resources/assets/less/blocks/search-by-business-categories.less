@@ -1,0 +1,128 @@
+#find-members-widget {
+    .business-categories-input {
+        .btn-clear {
+            bottom: 28px;
+            right: 40px;
+        }
+    }
+}
+.business-categories-input {
+    .btn-clear {
+        position: absolute;
+        bottom: 27px;
+        right: 27px;
+        color: @bg-orange;
+        line-height: 14px;
+    }
+    .dropdown-container {
+        position: relative;
+        .wizard {
+            overflow: hidden;
+            position: absolute;
+            top: -12px;
+            left: 0;
+            right: 0;
+
+            z-index: 1000;
+            padding: 0;
+            margin: 0.125rem 0 0;
+            font-size: 1rem;
+            color: #212529;
+            text-align: left;
+            list-style: none;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            border-radius: 0.25rem;
+
+            .btn {
+                padding: 0 6px;
+                line-height: 22px;
+                &-back {
+                    float: right;
+                }
+            }
+
+            .top-panel {
+                padding: 0 13px;
+                margin: 0.5rem 0 15px 0;
+                .multiselect {
+                    .checkbox-radio-style;
+                    .multiselect-text {
+                        display: inline !important;
+                    }
+                    .btn-continue {
+                        display: none;
+                        float: right;
+                    }
+                }
+            }
+
+            .results {
+                position: relative;
+                margin-bottom: 0.5rem;
+
+                ul {
+                    background: white;
+                    list-style: none;
+                    padding: 0 13px;
+                    margin: 0;
+                    li {
+                        padding: 0;
+                        margin-bottom: 1px;
+                        .btn-next {
+                            float: right;
+                        }
+                        .btn-multiselect-checkbox {
+                            float: right;
+                            display: none;
+                        }
+                    }
+                }
+                .services-categories-tree {
+                    .label {
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        width: 89%;
+                        display: inline-block;
+                        line-height: 11px;
+                    }
+                    .nested {
+                        display: none;
+                        &.current-step {
+                            display: block;
+                            position: absolute;
+                            background: white;
+                            top: 0;
+                            right: 0;
+                            left: 0;
+                            padding-bottom: 0.5rem;
+                        }
+                    }
+                }
+            }
+
+            &.multiselect-mode {
+                .top-panel {
+                    .multiselect {
+                        .btn-continue {
+                            display: block;
+                        }
+                    }
+                    .btn-back {
+                        display: none;
+                    }
+                }
+                .results {
+                    .btn-next {
+                        display: none;
+                    }
+                    .btn-multiselect-checkbox {
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}

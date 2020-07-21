@@ -1,0 +1,64 @@
+.contact-us {
+    background: #fff;
+    h2 {
+        font-size: 40px;
+        font-family: 'Futura Demi';
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    .top-banner {
+        background-image: url(./../../img/frontend/contact-banner.jpg);
+    }
+    .contact-info {
+        .title-section {
+            display: flex;
+            align-items: baseline;
+            i {
+                color: @bg-orange;
+                font-size: 25px;
+                margin-right: 20px;
+            }
+            h4 {
+                font-size: 26px;
+                font-family: 'Futura Demi';
+                color: @main-dark;
+            }
+        }
+        ul {
+            margin: 0;
+        }
+        address, ul li {
+            color: @bg-footer;
+            margin: 0;
+            a {
+                color: @bg-footer;
+                &:hover {
+                    color: @bg-footer;
+                }
+            }
+        }
+        .contact-section {
+            .media-body {
+                margin-left: 0!important;
+            }
+            &:after {
+                content: '';
+                border-top: 1px solid #a1acb8;
+                display: block;
+                margin: 25px 0;
+            }
+            &:last-child:after {
+                display: none;
+            }
+        }
+    }
+    .contact-form {
+        .form-style;
+    }
+    #map {
+        .gmnoprint,
+        .gm-bundled-control {
+            display: none;
+        }
+    }
+}

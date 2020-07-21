@@ -1,0 +1,1 @@
+<a href="{{ route('account.jobs.export', app('request')->all()) }}" class="btn link link--orange">Export to <i class="fas fa-file-excel"></i></a>

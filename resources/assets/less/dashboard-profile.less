@@ -1,0 +1,75 @@
+.dashboard-profile {
+    .inner {
+        background-color: transparent;
+        main {
+            h3 {
+                font-weight: bold;
+                font-size: 38px;
+                margin-bottom: 30px;
+            }
+            .profile-nav {
+                background: #fff;
+                margin-left: 0;
+                margin-bottom: 40px!important;
+                li {
+                    margin: 0;
+                    a {
+                        color: #687487;
+                        padding: 10px 25px 8px;
+                        content: none;
+                        border-radius: 0;
+                        font-size: 21px;
+                        height: 100%;
+                        &:before {
+                            content: none;
+                        }
+                        &.btn-primary {
+                            font-weight: normal;
+                            background-color: @bg-orange;
+                            color: #fff;
+                            border: 0;
+                        }
+                        &:not(.btn-primary):hover,
+                        &:not(.btn-primary):focus {
+                            color: @bg-orange;
+                            //color: #fff;
+                            box-shadow: none;
+                        }
+                    }
+                }
+            }
+            .main-container {
+                input:not([type="file"]):not([type="checkbox"]),
+                select,
+                span.select2,
+                .select2-selection {
+                    // select2 library trouble
+                    background-color: #f3f7f8 !important;
+                    width: 100% !important;
+                    min-height: 38px;
+                    font-size: 16px !important;
+                    border: 0;
+                    box-shadow: none;
+                    &:focus {
+                        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+                        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+                    }
+                }
+                .select2-selection__placeholder {
+                    color: @bg-footer !important;
+                }
+                button.btn[type="submit"] {
+                    background-color: @bg-orange;
+                    padding: 10px 45px;
+                    font-size: 18px;
+                    border: none;
+                }
+                form,
+                .form {
+                    background: #fff;
+                    padding: 40px;
+                }
+            }
+        }
+    }
+}

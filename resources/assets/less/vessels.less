@@ -1,0 +1,153 @@
+.dashboard-vessels {
+    .boat {}
+    .sub-boat {
+        td:first-child {
+            border-top: 0;
+            border-right: 1px solid #dee2e6;
+        }
+    }
+}
+.dashboard-vessels,
+.dashboard-vessels-crew {
+    .dashboard-table {
+        tr {
+            td {
+                h3 {
+                    small {
+                        font-size: 12px;
+                        line-height: 16px;
+                        margin-left: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.vessels {
+    &.transfer-vessel {
+        .d-flex {
+            .column {
+                flex: 0 0 40%;
+            }
+        }
+
+        .profile-image {
+            margin-bottom: 20px;
+
+            .img {
+                margin: 0 auto;
+                border-radius: 4px;
+                overflow: hidden;
+                width: 170px;
+                height: 170px;
+            }
+
+            &.member-image {
+                .img {
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        .tenders-list {
+            label {
+                display: block;
+                text-align: left;
+
+                input {
+                    width: auto;
+                    display: inline-block;
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        &-details {
+            .details-block {
+                padding: 15px;
+            }
+        }
+    }
+}
+
+.dashboard-vessels-documents {
+    .dashboard-table-view {
+        .search-form-widget {
+            float: right;
+            width: 292px;
+        }
+        .file {
+            .actions {
+                text-align: right;
+
+                a {
+                    display: inline-block;
+                    margin-left: 15px;
+                }
+            }
+
+            &:hover {
+                td {
+                    background: #dee2e6;
+                }
+            }
+        }
+    }
+    .documents-details {
+        .white-content-block;
+        min-height: 540px;
+        padding: 20px;
+        h4 {
+            font-family: 'Futura Demi', san-serif;
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 20px;
+            padding: 0 15px 15px;
+        }
+        .r {
+            .l {
+                font-weight: bold;
+                width: 25%;
+            }
+        }
+    }
+}
+
+.vessels {
+    &.vessel-transfer-confirmed,
+    &.vessel-transfer-accepted {
+        .white-block {
+            .white-content-block;
+            padding: 30px;
+            text-align: center;
+        }
+        .content-container {
+            margin-top: 95px;
+            margin-bottom: 95px;
+            h1 {
+                font-size: 40px;
+                font-family: 'Futura Demi';
+                margin-bottom: 20px;
+                color: @main-dark;
+            }
+            p {
+                font-size: 20px;
+                color: @bg-footer;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    &.edit-vessel {
+        .owners-field,
+        .captains-field {
+            .actions {
+                text-align: left !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,190 @@
+body {
+    overflow-x: hidden !important; /*to control the overflow when the summernote full screen is enabled*/
+}
+
+/*Blog  custom code*/
+.featured-post-wide {
+    position: relative;
+    margin: 0 0 30px;
+    overflow: hidden;
+}
+
+.the-box {
+    padding: 15px;
+    margin-bottom: 30px;
+    border: 1px solid #D5DAE0;
+    position: relative;
+    background: white;
+}
+
+.featured-post-wide .featured-text {
+    position: relative;
+    background: #fff;
+    padding: 15px 15px 15px 40px;
+    z-index: 3;
+}
+
+.additional-post {
+    padding: 10px 15px 10px 0;
+}
+
+.box {
+    width: 270px;
+}
+
+.article {
+    padding: 8px;
+    line-height: 1;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.article h4 {
+    margin: 14px 0 4px 0;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+h3 {
+    font-size: 17px;
+}
+
+.hide-text {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+
+.input-block-level {
+    display: block;
+    width: 100%;
+    min-height: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.btn-file {
+    overflow: hidden;
+    position: relative;
+    vertical-align: middle;
+}
+
+.btn-file > input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    /*transform : translate(-300px, 0) scale(4);*/
+    font-size: 23px;
+    direction: ltr;
+    cursor: pointer;
+}
+
+.padding_20px {
+    padding: 20px;
+}
+
+.padding_20px .hr {
+    border-top: 1px solid #ccc;
+    clear: both;
+    padding-top: 10px;
+}
+
+.padding_bottom_none {
+    padding-bottom: 0;
+}
+
+.bootstrap-select .btn {
+    width: 140%;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+.bootstrap-select.btn-group .dropdown-menu {
+    min-width: 100%;
+}
+
+.bootstrap-select.btn-group .btn .caret {
+    position: absolute;
+    right: 5px;
+    top: 15px;
+    color: #555;
+}
+
+.padding_20px .livicon {
+    padding-right: 15px !important;
+}
+
+.padding_20px p {
+    font-size: 12px;
+}
+
+.nopadleftright {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/*add new blog */
+/*summer note */
+.note-editable {
+    height: 300px;
+    width: 100%;
+    min-height: 300px;
+}
+
+.note-popover .popover-content .dropdown-menu,
+.panel-heading.note-toolbar .dropdown-menu {
+    z-index: 1070;
+}
+
+.mrg_btm15 {
+    margin-bottom: 15px;
+}
+
+.btn-default:not(.btn-link):not(.btn-flat) {
+    background-color: #eee !important;
+    border: 1px solid #d2d2d2;
+    color: #333 !important;
+}
+
+.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-group:not(:last-child) > .btn {
+    padding: 3px;
+}
+
+.panel-default > .panel-heading {
+    color: #555;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.hidden {
+    display: none;
+}
+
+.action-buttons > .btn {
+    margin-right: 10px;
+}
+.action-buttons > .btn.pull-right {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+.box-body .container-fluid {
+    padding: 0;
+}

@@ -1,0 +1,84 @@
+// banner under main menu
+.top-banner {
+    border-top: 1px solid #2d4f68;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 331px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin-top: 120px;
+    & > * {
+        position: relative;
+        z-index: 1;
+    }
+    .banner-title {
+        text-align: center;
+        font-family: 'Arno Pro';
+        font-size: 52px;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        line-height: 1;
+        margin: 0;
+        text-shadow: 2.5px 4.33px 10px rgba(34, 54, 85, 0.3);
+        letter-spacing: 1px;
+    }
+    .separator {
+        border: 0;
+        border-top: 2px solid #fff;
+        width: 100px;
+        margin: 10px 0;
+    }
+    .label {
+        color: #fff;
+        font-size: 25px;
+    }
+    .breadcrumb {
+        font-family: 'Myriad Pro';
+        font-size: 14px;
+        font-weight: 600;
+        background: transparent;
+        margin-top: 10px;
+        &-home {
+            display: none;
+        }
+        &-item {
+            a {
+                font-size: 14px;
+                color: rgb(255, 255, 255);
+            }
+            &.active span {
+                color: rgb(255, 198, 0);
+            }
+            &:before {
+                font-family: 'icomoon';
+                content: "\e900";
+                font-size: 8px;
+                font-weight: normal;
+                width: 5px;
+                height: 16px;
+                display: inline-block;
+                color: #fff;
+                transform: rotate(-90deg);
+                padding: 0 10px;
+            }
+            &:nth-child(1):before,
+            &:nth-child(2):before {
+                display:none;
+            }
+        }
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to left, rgba(8, 49, 79, .1) 0%, rgba(8, 49, 79, .33) 33%, rgba(8, 49, 79, .9) 100%);
+    }
+}

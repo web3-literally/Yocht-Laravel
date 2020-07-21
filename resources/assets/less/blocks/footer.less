@@ -1,0 +1,115 @@
+.footer-block-outer {
+    background-color: #fbfbfb;
+}
+
+.footer-block {
+    padding: 60px 0;
+    h4 {
+        font-family: "Futura Demi";
+        font-size: 24px;
+        color: @main-dark;
+        margin-bottom: 10px;
+    }
+    li {
+        line-height: 32px;
+        i.fa {
+            width: 16px;
+            text-align: center;
+            margin-right: 6px;
+            color: @main-dark;
+            &.fa-map-marker-alt {
+                color: @bg-orange;
+            }
+        }
+    }
+    & .footer-brand {
+        .navbar-brand {
+            //width: 200px;
+        }
+    }
+    & .about-excerpt-widget {
+        //width: 280px;
+        color: @bg-footer;
+    }
+    & .social-links-widget {
+        ul {
+            justify-content: left !important;
+            li {
+                margin-left: 0 !important;
+                margin-right: 30px !important;
+            }
+        }
+        .social-links-boxed
+    }
+    & .footer-nav-widget {
+        //width: 800px;
+        > .footer-nav-container {
+            > .footer-nav-column {
+                > .footer-nav {
+                    > .nav-item {
+                        > .nav-link {
+                            font-family: "Futura Demi";
+                            font-size: 24px;
+                            color: #233247;
+                            margin-bottom: 10px;
+                            font-weight: 500;
+                            line-height: 1.2;
+                            padding: 0;
+                        }
+                        ul {
+                            .nav-item {
+                                .nav-link {
+                                    padding: 0;
+                                    line-height: 26px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        a {
+            color: @main-dark;
+            &:hover {
+                color: @main-dark;
+            }
+        }
+    }
+    & .contact-widget {
+        a {
+            color: @bg-footer;
+            &:hover {
+                color: @bg-footer;
+            }
+        }
+    }
+    & .join-today-banner-widget {
+        h4:first-child {
+            margin-bottom: 0;
+        }
+        & hr {
+            color: #fff;
+            border: 1px solid #fff;
+            width: 50px;
+            margin-right: auto;
+            display: inline-block;
+        }
+        & .btn {
+            font-size: 18px;
+            padding: 6px 25px;
+        }
+    }
+}
+
+.footer {
+    font-size: 14px;
+    font-family: "Futura Book";
+    background-color: @bg-footer;
+    color: @bg-footer-text;
+    a {
+        color: @bg-footer-text;
+        &:hover {
+            color: @bg-footer-text;
+        }
+    }
+}

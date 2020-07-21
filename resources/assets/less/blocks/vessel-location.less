@@ -1,0 +1,61 @@
+.vessel-location {
+    float: right;
+
+    background: transparent;
+    font-size: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-family: "Futura Book";
+    color: #8692a3;
+
+    .current-vessel {
+        color: #8692a3;
+
+        .current-vessel-selector {
+            border: 0;
+            color: #8692a3;
+            .no-focus-shadow;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .switch-location {
+        margin-left: 5px;
+
+        &:hover {
+            text-decoration: none;
+        }
+
+        .current-location {
+            .value {
+                font-weight: bold;
+            }
+
+            margin-right: 5px;
+        }
+    }
+
+    margin-right: 1rem;
+}
+
+#vessel-location-modal {
+    .modal-dialog {
+        max-width: 50%;
+
+        .location-address-input {
+            input.has-error {
+                color: #721c24;
+            }
+
+            .help-block {
+                margin-top: 10px;
+                color: #721c24;
+                display: inline-block;
+                margin-left: 64px;
+            }
+        }
+    }
+}

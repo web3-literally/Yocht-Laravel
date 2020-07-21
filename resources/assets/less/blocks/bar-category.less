@@ -1,0 +1,74 @@
+.bar-category-widget  {
+    ul {
+        padding: 35px 30px 30px 30px;
+    }
+    li {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        margin-bottom: 25px;
+        border-radius: 2px;
+        overflow: hidden;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        a {
+            text-decoration: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+            h5 {
+                .general-transition;
+                margin: 0;
+                color: #fff;
+                font-family: Futura Demi, sans-serif;
+            }
+            span {
+                .general-transition;
+                height: 30px;
+                width: 30px;
+                color: @main-dark;
+                background: #ececec;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: bold;
+            }
+        }
+        &:after {
+            .general-transition;
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: linear-gradient(to left, rgba(8, 49, 79, 0.15) 0%, rgba(8, 49, 79, 0.44) 50%, rgba(8, 49, 79, 0.9) 100%);
+            background-size: 150%;
+            background-position: right;
+        }
+        &:hover {
+            a {
+                h5 {
+                    color: @bg-orange;
+                }
+                span {
+                    background-color: @bg-orange;
+                }
+            }
+            &:after {
+                .general-transition;
+                background-position: left;
+            }
+        }
+    }
+}

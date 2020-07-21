@@ -1,0 +1,34 @@
+.bar-dates-widget  {
+    li {
+        display: flex;
+        justify-content: space-between;
+        a {
+            font-weight: bold;
+            color: @main-dark;
+            span {
+                .general-transition;
+                margin-left: 3px;
+            }
+            &:hover {
+                text-decoration: none;
+                span {
+                    color: @bg-orange;
+                }
+            }
+        }
+        > span {
+            .general-transition;
+            height: 30px;
+            width: 30px;
+            color: #fff;
+            background: @bg-orange;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+    }
+}

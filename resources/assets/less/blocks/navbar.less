@@ -1,0 +1,51 @@
+#navbarCollapse {
+    .dropdown > .dropdown-menu {
+        margin-top: 0;
+    }
+    .dropdown:hover > .dropdown-menu {
+        display: block;
+    }
+
+    .notification {
+        .dashboard-notification;
+        .notification-toggle {
+            color: #fafafa;
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}
+
+body .navbar-light .navbar-toggler {
+    //border-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    outline: none;
+    &:focus {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+    .navbar-toggler-icon {
+        background-image: none!important;
+        background: rgba(255, 255, 255, 0.5);
+        height: 2px;
+        margin: 15px 0;
+        position: relative;
+        &:before,
+        &:after {
+            content: '';
+            height: 2px;
+            background: rgba(255, 255, 255, 0.5);
+            position: absolute;
+            width: 100%;
+            left: 0;
+        }
+        &:before {
+            top: -9px;
+        }
+        &:after {
+            bottom: -9px;
+        }
+    }
+}

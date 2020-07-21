@@ -1,0 +1,44 @@
+#top-search-form {
+    .loader {
+        display: none;
+        z-index: 3;
+        width: 40px;
+        height: 44px;
+        background : url('../../img/loading.gif') 50% 50% no-repeat;
+    }
+    .results-container {
+        z-index: 1001;
+        border-radius: 0 0 0.25rem 0.25rem;
+        padding: 10px 0 10px 0;
+        background: white;
+        display: none;
+        .dropdown-menu {
+            margin: 0 10px 0 10px;
+            position: static;
+            top: auto;
+            left: auto;
+            display:block;
+            float: none;
+            .nav-item {
+                label {
+                    display: block;
+                    width: 100%;
+                    padding: 0.25rem 1.5rem;
+                    clear: both;
+                    font-weight: bold;
+                    text-align: inherit;
+                    white-space: nowrap;
+                    background-color: transparent;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+                }
+            }
+        }
+        .empty {
+            display: block;
+            margin: 0;
+            text-align: center;
+            font-weight: bold;
+            width: 100%;
+        }
+    }
+}

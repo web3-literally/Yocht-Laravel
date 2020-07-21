@@ -1,0 +1,54 @@
+.search-by-location-widget {
+    .results {
+        position: relative;
+        .results-list {
+            position: absolute;
+            top: -12px;
+            left: 0;
+            right: 0;
+
+            z-index: 1000;
+            padding: 0.5rem 0;
+            margin: 0.125rem 0 0;
+            font-size: 1rem;
+            color: #212529;
+            text-align: left;
+            list-style: none;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            border-radius: 0.25rem;
+            li {
+                cursor: pointer;
+                display: block;
+                width: 100%;
+                padding: 0.25rem 1.5rem;
+                font-weight: 400;
+                color: #212529;
+                text-align: inherit;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                background-color: transparent;
+                border: 0;
+                &:hover {
+                    text-decoration: none;
+                    background-color: #f8f9fa;
+                }
+            }
+        }
+    }
+}
+
+#search-by-location-widget {
+    .search-by-location-widget;
+}
+
+#find-members {
+    .location-input {
+        .search-by-location-widget;
+        &.loading {
+
+        }
+    }
+}

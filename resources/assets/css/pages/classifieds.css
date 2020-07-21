@@ -1,0 +1,10 @@
+.gallery .remove-handle {
+    color: #EF6F6C;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}

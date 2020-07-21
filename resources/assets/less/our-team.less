@@ -1,0 +1,234 @@
+.our-team {
+    @bg-team-member: #123e5e;
+    .our-team-container {
+        .team-list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .team-member {
+            color: #fff;
+            background-color: @bg-team-member;
+            flex: 1 0 50%;
+            .inner {
+                display: flex;
+                align-items: stretch;
+                .photo, .description {
+                    flex: 50%;
+                }
+                .photo {
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    &.tm-1 {
+                        background-image: url(./../../images/our-team/2-5.png);
+                    }
+                    &.tm-2 {
+                        background-image: url(./../../images/our-team/06-1.png);
+                    }
+                    &.tm-3 {
+                        background-image: url(./../../images/our-team/02-1.png);
+                    }
+                    &.tm-4 {
+                        background-image: url(./../../images/our-team/03-1.png);
+                    }
+                    &.tm-5 {
+                        background-image: url(./../../images/our-team/team4.png);
+                    }
+                    &.tm-6 {
+                        background-image: url(./../../images/our-team/04-1.png);
+                    }
+                }
+                .description {
+                    position: relative;
+                    .point {
+                        position: absolute;
+                        top: calc(50% - 6px);
+                        left: -6px;
+                        transform: rotate(45deg);
+                        display: block;
+                        width: 12px;
+                        height: 12px;
+                        background-color: @bg-team-member;
+                    }
+                    .inner-text {
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        > * {
+                            width: 230px;
+                        }
+                        .title {
+                            font-family: 'Arno Pro';
+                            font-size: 42px;
+                            font-weight: bold;
+                            color: @bg-orange;
+                            line-height: 49px;
+                            a {
+                                color: @bg-orange;
+                            }
+                            &:hover {
+                                a {
+                                    text-decoration: none;
+                                    color: @bg-orange;
+                                }
+                            }
+                        }
+                        .text {
+                            font-family: 'Futura Book';
+                            font-size: 21px;
+                            margin-bottom: 0;
+                        }
+                        .links {
+                            margin-top: 44px;
+                            a {
+                                margin-right: 30px;
+                                color: #fff;
+                                &:hover {
+                                    text-decoration: none;
+                                    color: @bg-orange;
+                                }
+                            }
+                        }
+                    }
+                    height: 400px;
+                }
+                &.reverse {
+                    .description {
+                        .point {
+                            left: auto;
+                            right: -6px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-member {
+        .our-team-container {
+            .white-content-block {
+                border-radius: 0;
+                margin-top: 45px;
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+            .team-member {
+                color: @bg-footer;
+                background-color: #fff;
+                .inner {
+                    .description {
+                        padding-left: 114px;
+                        height: 684px;
+                        .inner-text {
+                            align-items: start;
+                            h1 {
+                                font-family: 'Arno Pro';
+                                font-weight: bold;
+                                font-size: 50px;
+                                color: @main-dark;
+                                width: auto;
+                                display: block;
+                                position: relative;
+                                background: transparent;
+                                z-index: 1;
+                                &:before {
+                                    content: '';
+                                    background: @bg-orange;
+                                    position: absolute;
+                                    bottom: 17px;
+                                    left: 6px;
+                                    right: 0px;
+                                    height: 6px;
+                                    width: auto;
+                                    margin: 0 auto;
+                                    z-index: -1;
+                                    opacity: 0.702;
+                                }
+                            }
+                            .links {
+                                margin-top: 27px;
+                                margin-bottom: 21px;
+                                a {
+                                    color: @main-dark;
+                                }
+                            }
+                            .profile {
+                                font-family: 'Futura Book';
+                                font-size: 22px;
+                                color: @bg-footer;
+                                width: 81%;
+                                display: block;
+                                ul {
+                                    li {
+                                        .line {
+                                            padding: 28px 0;
+                                            label, .value {
+                                                display: inline-block;
+                                                margin: 0;
+                                            }
+                                            label {
+                                                width: 150px;
+                                                text-align: left;
+                                            }
+                                        }
+                                        &:before {
+                                            content: '';
+                                            display: block;
+                                            border-top: 1px solid #dee3e6;
+                                            opacity: 0.4;
+                                        }
+                                        &:after {
+                                            content: '';
+                                            display: block;
+                                            border-top: 1px solid #dee3e6;
+                                        }
+                                        &:first-child:before {
+                                            border-top: 0;
+                                        }
+                                        &:last-child:after {
+                                            border-top: 0;
+                                        }
+                                        &:last-child {
+                                            .line {
+                                                padding-bottom: 0
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .team-member-details {
+                padding: 70px 105px 70px 75px;
+                h2 {
+                    font-family: 'Arno Pro';
+                    font-size: 40px;
+                    font-weight: bold;
+                    color: @main-dark;
+                    margin-bottom: 17px;
+                }
+                p {
+                    font-family: 'Futura Book';
+                    font-size: 20px;
+                    color: @bg-footer;
+                    margin-bottom: 50px;
+                }
+                p:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.decor {
+    &-3 {
+        background-image: url(../../img/frontend/bg-decoration-3.jpg);
+        background-repeat: no-repeat;
+        background-position: top right;
+    }
+}

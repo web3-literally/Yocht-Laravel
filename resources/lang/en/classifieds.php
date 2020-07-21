@@ -1,0 +1,30 @@
+<?php
+
+
+return [
+    'classifieds' => 'Classifieds',
+    'search_classified_listings' => 'Search Classified Listings',
+    'classifieds_categories' => 'Classifieds Categories',
+    'classified_listings' => 'Classified Listings',
+    'browse_classified_listings' => 'Browse Classified Listings',
+    'boat_category' => 'Boat Category',
+    'boat_brands' => 'Yacht Brands',
+    'part_categories' => 'Part Categories',
+    'accessory_brands' => 'Accessory Brands',
+    'accessory_categories' => 'Accessory Categories',
+    'part_brands' => 'Part Brands',
+    'country' => 'Country',
+    'boats_for_sale' => 'Boats For Sale',
+    'boats' => 'Boats',
+    'parts_for_sale' => 'Parts For Sale',
+    'parts' => 'Parts',
+    'accessories_for_sale' => 'Accessories For Sale',
+    'accessories' => 'Accessories',
+    'new_used' => 'New & Used',
+    'search_boats' => 'Search Boats',
+    'search_parts' => 'Search Parts',
+    'search_accessories' => 'Search Accessories',
+    'new_classified' => 'New Classified',
+    'edit_classified' => 'Edit Classified',
+    'no_classified' => 'No classified',
+];

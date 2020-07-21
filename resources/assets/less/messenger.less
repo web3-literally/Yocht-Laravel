@@ -1,0 +1,61 @@
+.messenger-messages {
+    .threads {
+        padding: 15px;
+
+        .thread {
+            .user-name {
+                small {
+                    font-size: 18px;
+                    color: @bg-orange;
+                }
+            }
+
+            .last-message {
+                margin-bottom: 0;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .thread {
+        .messages {
+            padding: 15px;
+
+            .card {
+                background: #f3f7f8;
+            }
+        }
+    }
+}
+
+.messenger-messages {
+    #conversation-search {
+        .form-style;
+
+        select {
+            display: none;
+        }
+    }
+
+    .select-members-group-item {
+        font-size: 18px;
+        text-align: center;
+        border-bottom: 1px solid #99A3A4;
+        display: block;
+    }
+
+    .select-member-item {
+        display: flex;
+        align-items: flex-start;
+        align-self: center;
+        img {
+            border-radius: 2px;
+        }
+        .name {
+            margin-left: 10px;
+        }
+    }
+}

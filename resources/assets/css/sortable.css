@@ -1,0 +1,15 @@
+.sortable > * > .sortable-item {
+    position: relative;
+}
+.sortable > * > .sortable-item .sortable-handle {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+.sortable > * > .sortable-item .sortable-handle .fa-sort {
+    transform: rotate(90deg);
+}

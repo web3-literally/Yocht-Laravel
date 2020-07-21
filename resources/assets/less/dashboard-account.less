@@ -1,0 +1,112 @@
+.dashboard-account {
+    h3 {
+        font-weight: bold;
+        font-size: 38px;
+        margin-bottom: 30px;
+    }
+    .account-nav {
+        background: #fff;
+        margin-left: 0;
+        margin-bottom: 60px!important;
+        padding-left: 0;
+        list-style: none;
+        li {
+            margin: 0;
+            a {
+                color: #687487;
+                padding: 10px 25px 8px;
+                content: none;
+                border-radius: 0;
+                font-size: 21px;
+                height: 100%;
+                &:before {
+                    content: none;
+                }
+                &.btn-primary {
+                    font-weight: normal;
+                    background-color: @bg-orange;
+                    color: #fff;
+                    border: 0;
+                }
+                &:not(.btn-primary):hover,
+                &:not(.btn-primary):focus {
+                    color: @bg-orange;
+                    //color: #fff;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+    .content {
+        margin-bottom: 10px;
+        span {
+            font-size: 18px;
+            a {
+                color: @bg-orange;
+            }
+        }
+        h2 {
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .table {
+            background: #fff;
+            a {
+                color: @bg-orange;
+            }
+        }
+        form {
+            label {
+                font-size: 18px;
+                font-weight: bold;
+            }
+            input:not([type="file"]),
+            select,
+            span.select2,
+            .select2-selection {
+                // select2 library trouble
+                background-color: #f3f7f8!important;
+                width: 100%!important;
+                min-height: 38px;
+                font-size: 16px!important;
+                border: 0;
+                box-shadow: none;
+                &:focus {
+                    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+                    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+                }
+            }
+        }
+        .manage-account {
+            label {
+                width: 70px;
+                font-weight: bold;
+                font-size: 16px;
+            }
+            .value {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1199px) {
+
+    .dashboard-account {
+        .account-nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            li {
+                width: 100%;
+                a {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+
+}

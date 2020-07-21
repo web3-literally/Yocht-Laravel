@@ -1,0 +1,28 @@
+.site-statistic-widget {
+    padding-top: 10px;
+    .statistic {
+        min-width: 100px;
+        .value {
+            position: relative;
+            font-family: 'Futura Demi';
+            font-size: 38px;
+            color: #ffc600;
+            .metric {
+                position: absolute;
+                top: 0;
+                right: -10px;
+                font-size: 19px;
+                &.percentage {
+                    right: -15px;
+                }
+            }
+        }
+        .label {
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+            color: @main-dark;
+            text-transform: uppercase;
+        }
+    }
+}

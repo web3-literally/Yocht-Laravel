@@ -1,0 +1,93 @@
+
+// Import Google fonts
+
+/* Set Font Family */
+
+
+/*=============Over ride =====*/
+
+@import '~bootstrap/scss/functions';
+@import "variables";
+@import "app";// Core variables and mixins
+
+
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'Lato', sans-serif;
+}
+
+
+h3
+{
+  font-size:24px;
+}
+h4 {
+  font-size: 16px;
+}
+h2 {
+  font-size: 30px;
+}
+h1{
+  font-size: 36px;
+}
+h5{
+  font-size: 14px;
+}
+h6{
+  font-size: 12px;
+}
+
+p{
+  font-size: 14px;
+}
+span{
+  font-size:12px;
+}
+.content-header h1 {
+  font-size: 22px;
+  line-height: 1.5;
+}
+.panel-success > .card-heading {
+  color: #fff;
+  background-color: #01BC8C;
+  border-color: #01BC8C;
+  width:100%;
+  display:inline-block;
+}
+.panel-primary> .card-heading {
+  color: #fff;
+  background-color: #418bca;
+  border-color: #418bca;
+}
+.card-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  color: inherit;
+}
+.card-heading {
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.panel-info>.card-heading {
+  color: #fff;
+  background-color: #67c5df;
+  border-color: #67c5df;
+}
+.panel-warning > .card-heading {
+  color: #fff;
+  background-color: #F89A14;
+  border-color: #F89A14;
+}
+.panel-danger>.card-heading {
+  color: #fff;
+  background-color: #ef6f6c;
+  border-color: #ef6f6c;
+}
+.panel-default>.card-heading {
+  color: #fff;
+  background-color: #a9b6bc;
+  border-color: #a9b6bc;
+}

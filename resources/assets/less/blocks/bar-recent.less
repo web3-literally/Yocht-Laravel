@@ -1,0 +1,81 @@
+.bar-recent-widget {
+    li {
+        position: relative;
+        overflow: hidden;
+        .general-transition;
+        > a {
+            display: flex;
+            flex-direction: row;
+            color: @main-dark;
+            text-decoration: none;
+            .image {
+                position: relative;
+                img {
+                    -webkit-border-radius: 7px;
+                    -moz-border-radius: 7px;
+                    border-radius: 7px;
+                }
+                .video-icon {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    height: 20px;
+                    width: 20px;
+                    background: #f8b42b;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    box-shadow: 0px 0px 0px 4px #fff;
+                    color: #fff;
+                    font-size: 12px;
+                }
+            }
+            .content {
+                padding-left: 15px;
+                h5 {
+                    font-family: Futura Demi, sans-serif;
+                    margin: 0;
+                    font-weight: bold;
+                    color: @main-dark;
+                }
+                small {
+                    color: @main-dark;
+                }
+            }
+        }
+        &:before,
+        &:after {
+            .general-transition;
+            content: '';
+            width: 100%;
+            border-top: 1px solid @bg-orange;
+            position: absolute;
+            box-shadow: 0 0px 20px 1px orange;
+            left: 0;
+            right: 0;
+        }
+        &:before {
+            //top: 0;
+            //left: -100%;
+            top: -20px;
+        }
+        &:after {
+            //bottom: 0;
+            //right: -100%;
+            bottom: -20px;
+        }
+        &:hover {
+            cursor: pointer;
+            box-shadow: none;
+            &:before {
+                //left: 0;
+                top: 0;
+            }
+            &:after {
+                //right: 0;
+                bottom: 0;
+            }
+        }
+    }
+}

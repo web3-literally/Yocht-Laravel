@@ -1,0 +1,517 @@
+// search-classifieds
+.search-classifieds {
+    background-color: @bg-second;
+    .top-banner {
+        background-image: url(./../../img/frontend/classifileds-search-banner.png);
+    }
+    #for-sale-tabs {
+        background: #fff;
+        margin-left: 0;
+        margin-bottom: 15px;
+        li {
+            margin: 0;
+            a {
+                color: #687487;
+                padding: 10px 25px 5px;
+                content: none;
+                border-radius: 0;
+                font-size: 24px;
+                &:before {
+                    content: none;
+                }
+                &.active {
+                    font-weight: normal;
+                    background-color: @bg-orange;
+                    color: #fff;
+                }
+                &:not(.active):hover {
+                    color: @bg-orange;
+                    //color: #fff;
+                }
+            }
+        }
+    }
+    .content {
+        .row > div {
+            background-color: #fff;
+            padding: 55px;
+        }
+        h2 {
+            font-weight: bold;
+            font-size: 38px;
+            margin-bottom: 30px;
+        }
+        input + label {
+            font-size: 18px;
+            margin-right: 30px;
+            font-weight: bold;
+        }
+        .divider {
+            width: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .block_price_input{
+            margin-top: 15px;
+        }
+        .renger-price-bloack{
+            .justify-content-end {
+                text-align: center;
+                .btn {
+                    margin-top: 10%;
+                }
+            }
+        }
+        .search-field {
+            input {
+                background: none;
+                border: 1px solid #374861;
+                height: 55px;
+            }
+            .input-group-append {
+                height: 45px;
+                width: 46px;
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                background-color: @bg-orange;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                button {
+                    padding: 0;
+                    color: #fff;
+                }
+            }
+        }
+        .browse-classified-listings {
+            #listing-tabs,
+            .listing-tabs {
+                margin-left: 0;
+                margin-bottom: 10px;
+                background-color: #f7fafb;
+                li {
+                    margin: 0;
+                    a {
+                        color: #687487;
+                        padding: 10px 25px 5px;
+                        content: none;
+                        border-radius: 0;
+                        font-size: 20px;
+                        &:before {
+                            content: none;
+                        }
+                        &.active {
+                            font-weight: normal;
+                            background-color: @bg-orange;
+                            color: #fff;
+                        }
+                        &:not(.active):hover {
+                            color: @bg-orange;
+                            //color: #fff;
+                        }
+                    }
+                }
+            }
+            #listing-tabs-content,
+            .listing-tabs-content {
+                background-color: #f7fafb;
+                padding: 25px 35px;
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    li {
+                        flex: 1 0 50%;
+                        padding: 0;
+                        justify-content: space-between;
+                        display: flex;
+                        color: #1b5076;
+                        font-size: 17px;
+                        padding-left: 15px;
+                        a {
+                            position: relative;
+                            color: #374861;
+                            &:before {
+                                content: '';
+                                display: block;
+                                height: 8px;
+                                width: 8px;
+                                -webkit-border-radius: 50%;
+                                -moz-border-radius: 50%;
+                                border-radius: 50%;
+                                position: absolute;
+                                background: #1b5076;
+                                top: calc(50% - 4px);
+                                left: -12px;
+                            }
+                        }
+                        span {
+                            color: #6d7888;
+                        }
+                        &:nth-child(odd) {
+                            padding-right: 60px;
+                        }
+                        &:nth-child(even) {
+                            padding-left: 60px;
+                        }
+                        a {
+                            display: inline-block;
+                            //width: 270px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 992px) {
+    body.search-classifieds .content .browse-classified-listings {
+        #listing-tabs-content,
+        .listing-tabs-content {
+            padding: 15px 25px;
+
+            ul li {
+                flex: 100%;
+                padding: 0 !important;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {}
+
+
+// classifieds-category
+.classifieds-category {
+    background-color: @bg-second;
+    .bg-map {
+        background-image: url(./../../img/frontend/classifieds-lighthouse.png);
+        background-image: url(../../img/frontend/classifieds-lighthouse.png);
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        background-size: 25%;
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .search-from {
+        background: #fff;
+        padding: 35px 40px;
+        box-shadow: 0px 6px 44.16px 3.84px rgba(224, 237, 245, 0.35);
+        border-radius: 5px;
+        background-image: url(./../../img/frontend/events-search-bg.png);
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        h5 {
+            font-size: 27px;
+            font-family: "Futura Demi";
+            color: @main-dark;
+            line-height: 1.5;
+        }
+        .form-group {
+            margin-bottom: 0;
+        }
+        label {
+            font-size: 18px;
+            color: @main-dark;
+        }
+        button[type="submit"] {
+            background-color: @bg-orange;
+            outline: none;
+            border: none;
+        }
+        input:not([type="submit"]),
+        .select2-selection,
+        select {
+            border-radius: 3px;
+            background-color: #F2F6F7;
+            border: none;
+            box-shadow: none;
+        }
+    }
+    #classifieds-listing {
+        margin-top: 70px;
+        .label-title {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: baseline;
+            .label-box {
+                width: 100%;
+                .h3-hr:after {
+                    left: 14%;
+                    right: 2%;
+                }
+            }
+            .sort-box {
+                .listing-order {
+                    background: #fff;
+                    padding: 5px 20px;
+                    a:after {
+                        color: #45556c;
+                        margin-left: 60px;
+                    }
+                }
+            }
+        }
+        .items {
+            margin-top: 60px;
+            .item {
+                margin-bottom: 30px;
+                border-radius: 7px;
+                .image {
+                    height: 420px;
+                    border-radius: 7px 7px 0 0;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    button {
+                        .favorite-button;
+                    }
+                }
+                .content {
+                    background-color: #fff;
+                    display: flex;
+                    flex-direction: column;
+                    border-radius: 0 0 7px 7px;
+                    .posted-by {
+                        margin-top: 30px;
+                        margin-bottom: 30px;
+                        img {
+                            border-radius: 50%;
+                            margin-right: 15px;
+                        }
+                        .fa-clock {
+                            margin-left: 30px;
+                        }
+                        padding-left: 30px;
+                        padding-right: 30px;
+                    }
+                    h2 {
+                        font-size: 24px;
+                        font-weight: bold;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        margin-bottom: 15px;
+                    }
+                    .geo {
+                        margin-bottom: 25px;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                    .under-post-info {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        flex-direction: row;
+                        padding: 15px 20px;
+                        position: relative;
+                        &:after {
+                            content: '';
+                            height: 1px;
+                            width: 100%;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            background-color: #d9dee2;
+                        }
+                        .price {
+                            font-size: 44px;
+                            color: @bg-footer;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// classified-details
+.classified-details {
+    background-color: #e9eef0;
+    .bg-map {
+        background-image: url(./../../img/frontend/classified-details-banner.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .main-content {
+        background: #fff;
+        -webkit-box-shadow: 0px 0px 4px 0px rgba(34, 54, 85, 0.04), 0px 1px 40px 0px rgba(34, 54, 85, 0.03);
+        -moz-box-shadow: 0px 0px 4px 0px rgba(34, 54, 85, 0.04), 0px 1px 40px 0px rgba(34, 54, 85, 0.03);
+        box-shadow: 0px 0px 4px 0px rgba(34, 54, 85, 0.04), 0px 1px 40px 0px rgba(34, 54, 85, 0.03);
+        .classified-details-top-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 50px;
+            .left-side {
+                display: flex;
+                padding: 30px 0;
+                img {
+                    margin-top: 6px;
+                    margin-right: 15px;
+                    width: 25px;
+                    height: 25px;
+                }
+                .title-section {
+                    h1 {
+                        font-weight: bold;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+            .right-side {
+                span {
+                    font-size: 44px;
+                    font-weight: bold;
+                    display: flex;
+                    align-items: flex-start;
+                    line-height: 0.7;
+                    .currency {
+                        font-weight: lighter;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        .classified-details-banner {
+            height: 60vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .classified-details-text {
+            padding: 50px;
+            padding-bottom: 40px;
+            .classified-details-bottom-info {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 35px;
+                .left-side {
+                    img {
+                        border-radius: 50%;
+                        margin-right: 15px;
+                    }
+                    .far {
+                        margin-left: 15px;
+                        margin-right: 5px;
+                    }
+                }
+                .right-side {
+                    display: flex;
+                    align-items: baseline;
+                    > * {
+                        margin-left: 10px;
+                    }
+                    .btn {
+                        padding: 6px 30px;
+                        margin-left: 15px;
+                    }
+                }
+            }
+        }
+        .classified-details-fields {
+            display: flex;
+            justify-content: start;
+            > span {
+                margin-right: 30px;
+                label {
+                    display: block;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .side-bar {
+        #classified-map {
+            .gmnoprint,
+            .gm-bundled-control {
+                display: none;
+            }
+        }
+    }
+}
+
+.classifieds {
+    &.classifieds-refresh,
+    &.classifieds-deactivate {
+        .white-block {
+            .white-content-block;
+            padding: 30px;
+            text-align: center;
+        }
+        .classifieds-status-container {
+            margin-top: 95px;
+            margin-bottom: 95px;
+            h1 {
+                font-size: 40px;
+                font-family: 'Futura Demi';
+                margin-bottom: 20px;
+                color: @main-dark;
+            }
+            p {
+                font-size: 22px;
+                color: @bg-footer;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    body.classified-details {
+        .main-content {
+            margin-bottom: 40px;
+            .classified-details-top-info {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 40px;
+                flex-direction: column;
+                text-align: center;
+                img {
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+            .classified-details-text .classified-details-bottom-info {
+                flex-direction: column;
+                .left-side {
+                    margin-bottom: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    min-height: 150px;
+                    align-items: center;
+                    justify-content: space-around;
+                }
+                .right-side {
+                    flex-direction: column;
+                    align-items: center;
+                    min-height: 150px;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {}

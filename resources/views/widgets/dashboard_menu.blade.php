@@ -1,0 +1,1 @@
+{!! $DashboardMenu->asUl(['class' => 'navbar-nav mr-auto'], ['class' => 'dropdown-menu']) !!}

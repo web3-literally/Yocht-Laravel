@@ -1,0 +1,40 @@
+.bar-archive-widget {
+    h4 {
+        .general-transition;
+        text-align: left;
+        &:before {
+            display: none;
+        }
+        cursor: pointer;
+        span {
+            color: #b2bfd2;
+            font-size: 20px;
+            i {
+                margin-right: 0;
+            }
+        }
+        &.collapsed {
+            box-shadow: none;
+            span {
+                i {
+                    margin-right: 3px;
+                    &:before {
+                        content: "\f07b";
+                    }
+                }
+            }
+        }
+        .toggle-icon {
+            float: right;
+        }
+    }
+    a {
+        color: @main-dark;
+        font-weight: bold;
+        .general-transition;
+        &:hover {
+            text-decoration: none;
+            color: @bg-orange;
+        }
+    }
+}

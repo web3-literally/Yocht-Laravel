@@ -1,0 +1,86 @@
+.services-categories {
+    .service-category {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-bottom: 30px;
+        a {
+            height: 25vh;
+            background-image: linear-gradient(to left, transparent, #fff);
+            text-decoration: none;
+            &:hover {
+                h3 {
+                    margin-left: 10%;
+                }
+            }
+            h3 {
+                .general-transition;
+                display: flex;
+                align-items: center;
+                margin-left: 5%;
+                font-size: 43px;
+                font-family: Futura Demi, san-serif;
+                font-weight: bold;
+                color: @bg-footer;
+            }
+        }
+    }
+}
+
+.services-category {
+    .bg-map {
+        padding-top: 110px;
+        padding-bottom: 110px;
+    }
+    #find-members-widget {
+        background-color: #fff;
+    }
+    .items-list {
+        margin-top: 50px;
+        //
+        .items {
+            margin-top: 60px;
+            .item {
+                margin-bottom: 30px;
+                border-radius: 7px;
+                .image {
+                    height: 420px;
+                    border-radius: 7px 7px 0 0;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    button {
+                        .favorite-button;
+                    }
+                }
+                .content {
+                    background-color: #fff;
+                    display: flex;
+                    flex-direction: column;
+                    border-radius: 0 0 7px 7px;
+
+                    h2 {
+                        font-weight: bold;
+                        margin: 40px 30px 10px;
+                        font-size: 24px;
+                    }
+                    .item-content {
+                        display: flex;
+                        flex-direction: column;
+                        padding: 10px 30px;
+                        min-height: 210px;
+                        justify-content: space-between;
+                    }
+                    .color-orange {
+                        margin: 10px 0;
+                        display: inline-block;
+                        color: @bg-orange;
+                        &:hover {
+                            color: @bg-orange;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

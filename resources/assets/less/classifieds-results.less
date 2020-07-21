@@ -1,0 +1,58 @@
+.classifieds-results {
+    .content.form-style {
+        background: #fff;
+        padding: 50px;
+    }
+    #classifieds-listing {
+        .language-switcher-item {
+            display: flex;
+            justify-content: flex-end;
+            margin: 20px 0;
+            .dropdown-toggle {
+                background: #fff;
+                padding: 10px 15px;
+                &:after {
+                    color: #45556c;
+                    margin-left: 60px;
+                }
+            }
+        }
+    }
+    .items {
+        .item {
+            margin-bottom: 30px;
+            .image {
+                height: 350px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                button {
+                    .favorite-button;
+                }
+            }
+            .content {
+                background: #fff;
+                padding: 15px;
+                min-height: 380px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                & > * {
+                    padding: 0;
+                }
+                h2 {
+                    margin-top: 15px;
+                }
+                .under-post-info {
+                    margin-bottom: 15px;
+                    margin-top: 35px;
+                    display: flex;
+                    flex-direction: column;
+                    a {
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

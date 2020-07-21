@@ -1,0 +1,116 @@
+.featured-members-container {
+    background-color: #fff;
+    margin-bottom: 70px;
+}
+
+.featured-members-widget {
+    padding: 70px 90px;
+    .widget-divider {
+        width: 640px;
+        height: 36px;
+        margin: 0 auto;
+        text-align: center;
+        background-image: url(./../../img/frontend/divider.png);
+        background-repeat: repeat-x;
+        background-position: left center;
+        .icon {
+            width: 59px;
+            background-color: #fff;
+            font-size: 23px;
+            display: inline-block;
+            margin-left: -1px;
+            &:before {
+                color: #5a6575;
+            }
+        }
+        margin-bottom: 33px;
+    }
+    h4 {
+        width: 640px;
+        margin: 0 auto;
+        text-align: center;
+        font-weight: 600;
+        color: @main-dark;
+        font-family: 'Arno Pro';
+        font-size: 34px;
+    }
+    .owl-carousel {
+        margin-top: 44px;
+        min-height: 154px;
+        .owl-carousel-item {
+            a {
+                .general-transition;
+                transform: scale(1);
+                display: block;
+                text-align: center;
+                &:hover {
+                    .name {
+                        span:first-child {
+                            color: @bg-orange;
+                        }
+                    }
+                    text-decoration: none;
+                }
+            }
+            .photo {
+                .dashboard-photo;
+                .status {
+                    .general-transition;
+                    top: 5px;
+                    right: 5px;
+                    border-color: #fff;
+                    opacity: 1;
+                }
+                padding-bottom: 9px;
+            }
+            .name {
+                font-family: 'Futura Demi';
+                color: @main-dark;
+                text-align: center;
+                span {
+                    font-size: 19px;
+                    transition: all .3s ease-in-out;
+                    font-weight: bold;
+                }
+                small {
+                    color: @grey-text;
+                    font-size: 13px;
+                    text-transform: capitalize;
+                    min-height: 19px;
+                }
+                .rating {
+                    letter-spacing: -1px;
+                    color: @bg-orange;
+                    i {
+                        font-size: 11px;
+                    }
+                }
+                span, .rating, small {
+                    display: block;
+                }
+            }
+        }
+        .owl-controls {
+            .owl-pagination {
+                .owl-page {
+                    width: 13px;
+                    height: 26px;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    top: 34px;
+                    &.active {
+                        display: none;
+                    }
+                }
+                .owl-page:first-child {
+                    background-image: url("./../../img/frontend/owl-left-arrow.png");
+                    left: -56px;
+                }
+                .owl-page:last-child {
+                    background-image: url("./../../img/frontend/owl-right-arrow.png");
+                    right: -56px;
+                }
+            }
+        }
+    }
+}

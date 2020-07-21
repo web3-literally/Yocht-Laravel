@@ -1,0 +1,157 @@
+.review-item {
+    .content {
+        padding: 10px;
+
+        .posted-by {
+            .name {
+                color: #f8b42b;
+            }
+
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        .date {
+            position: absolute;
+            top: 0;
+            right: 15px;
+            padding: 1px 10px;
+        }
+
+        .review-title {
+            margin-top: 10px;
+            font-family: Futura Demi, san-serif;
+            font-weight: bold;
+            margin-bottom: 3px;
+            color: @bg-footer;
+        }
+
+        .review-content {
+            color: @bg-footer;
+        }
+    }
+}
+
+.members {
+    &.member-reviews {
+        .top-banner {
+            background-image: url(./../../img/frontend/classifileds-search-banner.png);
+        }
+
+        .bg-map {
+            background-image: url(../../img/frontend/kraken.png);
+            background-position: bottom left;
+            background-repeat: no-repeat;
+            padding-top: 110px;
+        }
+
+        .reviews-container {
+            #find-reviews-widget {
+                .members-find;
+
+                form {
+                    .form-style;
+
+                    input[type=submit] {
+                        margin-top: 37px;
+                        display: block;
+                    }
+                }
+            }
+
+            .member-reviews-listing-container {
+                margin-top: 70px;
+            }
+
+            .label {
+                margin-bottom: 35px;
+
+                .label-box h3:after {
+                    left: 15%;
+                }
+            }
+
+            .item {
+                .review-item;
+            }
+        }
+    }
+
+    .vessel-reviews {
+        .item {
+            padding: 15px;
+            .review-item;
+        }
+    }
+}
+
+.reviews {
+    &.review-status {
+        .white-block {
+            .white-content-block;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .review-status-container {
+            margin-top: 95px;
+            margin-bottom: 95px;
+
+            h1 {
+                font-size: 40px;
+                font-family: 'Futura Demi';
+                margin-bottom: 20px;
+                color: @main-dark;
+            }
+
+            p {
+                font-size: 22px;
+                color: @bg-footer;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.reviews.reviews-inner {
+    .bg-map {
+        padding-top: 110px;
+        padding-bottom: 110px;
+        background-image: url(../../img/frontend/classified-details-banner.png);
+        background-position: bottom right;
+        background-repeat: no-repeat;
+    }
+
+    .item {
+        background: #fff;
+        padding: 25px 0;
+    }
+
+    .content {
+        padding: 0 50px;
+
+        h4 a {
+            font-family: Futura Demi, san-serif;
+            font-weight: bold;
+            color: @bg-footer;
+            font-size: 35px;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .item-details {
+            .posted-by {
+                .name {
+                    color: #f8b42b;
+                }
+            }
+
+            a {
+                color: @bg-orange;
+            }
+        }
+    }
+}

@@ -1,0 +1,1 @@
+{!! $MainMenu->asUl(['class' => 'navbar-nav mr-auto'], ['class' => 'dropdown-menu']) !!}

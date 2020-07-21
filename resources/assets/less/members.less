@@ -1,0 +1,503 @@
+.members {
+    &.members-search {
+        .top-banner {
+            background-image: url(../../img/frontend/contact-banner.jpg);
+        }
+        .bg-map {
+            background-image: url(../../img/frontend/kraken.png);
+            background-position: bottom left;
+            background-repeat: no-repeat;
+            padding-top: 110px;
+        }
+        .members-container {
+            #find-members-widget {
+                .members-find;
+            }
+            .members-listing-container {
+                margin-top: 70px;
+            }
+            .label {
+                margin-bottom: 35px;
+                .label-box h3:after {
+                    left: 12%;
+                }
+            }
+            .item {
+                .content {
+                    .position {
+                        position: absolute;
+                        top: 0;
+                        right: 15px;
+                        background: #f8b42b;
+                        padding: 1px 10px;
+                        border-radius: 3px;
+                        color: #fff;
+                    }
+                    .rating {
+                        margin-top: 1rem;
+                        margin-bottom: 1rem;
+                        ul {
+                            margin-bottom: 0;
+                        }
+                    }
+                    .specializing, .address {
+                        margin-right: 15px;
+                    }
+                    .item-content {
+                        margin-top: 1rem;
+                        .member-content {
+                            min-height: 72px;
+                        }
+                    }
+                    .quick-profile-links {
+                        float: right;
+                        font-size: 28px;
+                        > a {
+                            color: @bg-orange;
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.vessel-details {
+        .main-content {
+            .image {
+                border-radius: 4px;
+            }
+            .content {
+                .flag-registered-port-block {
+                    float: right;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    .flag-icon {
+                        line-height: 38px;
+                        width: 50px;
+                        border-radius: 3px;
+                    }
+                    .registered-port {
+                        font-weight: bold;
+                    }
+                }
+            }
+            .vessel-details {
+                .vessel-photos {
+                    img {
+                        border-radius: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.members-find {
+    background: #fff;
+    padding: 35px 40px;
+    box-shadow: 0px 6px 44.16px 3.84px rgba(224, 237, 245, 0.35);
+    border-radius: 5px;
+    background-image: url(../../img/frontend/events-search-bg.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    h5 {
+        font-size: 27px;
+        font-family: "Futura Demi";
+        color: #233247;
+        line-height: 1.5;
+    }
+}
+
+
+.member-details {
+    .top-banner {
+        background-image: url(../../img/frontend/about-us-banner.jpg);
+    }
+    .bg-map {
+        padding-top: 110px;
+        padding-bottom: 110px;
+        background-image: url(../../img/frontend/classified-details-banner.png);
+        background-position: top right;
+        background-repeat: no-repeat;
+    }
+    .main-content {
+        .image {
+            background-position: center;
+            background-size: cover;
+            background-color: #ddd;
+            min-height: 400px;
+        }
+        .content {
+            padding: 0 40px;
+            h3 {
+                margin-top: 10px;
+                font-family: Futura Demi, san-serif;
+                font-weight: bold;
+                margin-bottom: 3px;
+                color: @bg-footer;
+                font-size: 45px;
+                & + span {
+                    font-size: 25px;
+                    font-family: Futura Demi, san-serif;
+                    position: relative;
+                    top: -30px;
+                    color: @bg-orange;
+                }
+            }
+            .rating {
+                margin: 20px 0;
+            }
+            .item-details {
+                display: flex;
+                flex-direction: column;
+                > * {
+                    margin-bottom: 10px;
+                }
+                .vessel-details > div {
+                    width: 150px;
+                    margin-bottom: 15px;
+                    .flag-icon {
+                        float: none;
+                        width: 29px;
+                        margin-top: -8px;
+                    }
+                }
+            }
+            .download_cv {
+                background: orange;
+                color: #fff;
+                padding: 10px 30px;
+                margin-top: 10px;
+                display: inline-block;
+            }
+            .item-links {
+                margin-top: 30px;
+                ul {
+                    display: flex;
+                    li {
+                        .general-transition;
+                        margin-right: 15px;
+                        background: @bg-orange;
+                        border-radius: 50%;
+                        height: 35px;
+                        width: 35px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        &:hover {
+                            background: darken(@bg-orange, 10%);
+                        }
+                        > a {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+        .additional-details {
+            margin-top: 50px;
+            h5 {
+                font-size: 28px;
+                font-weight: bold;
+            }
+            .item-vessels {
+                margin-bottom: 1rem;
+                .vessel {
+                    a {
+                        color: #687487;
+                        display: inline-block;
+                        img {
+                            display: block;
+                        }
+                        label {
+                            cursor: pointer;
+                            display: block;
+                            margin-bottom: 0;
+                            margin-top: 10px;
+                            text-align: center;
+                            font-weight: bold;
+                            font-size: 20px;
+                        }
+                        &:hover,
+                        &:focus {
+                            text-decoration: none;
+                            color: @bg-orange;
+                        }
+                    }
+                }
+            }
+            .map-image {
+                margin-top: 15px;
+                img {
+                    display: block;
+                    width: 100%;
+                }
+            }
+        }
+        .map-block,
+        #member-map {
+            display: block;
+            width: 100%;
+        }
+        #member-map {
+            margin-top: 50px;
+            .gmnoprint,
+            .gm-bundled-control {
+                display: none;
+            }
+        }
+    }
+}
+
+
+
+
+@media only screen and (max-width: 992px) {
+    body.member-details {
+        .main-content {
+            .image {
+                background-image: url(http://yac.loc/uploads/users);
+                height: 400px;
+                margin-bottom: 40px;
+            }
+            .content {
+                h3 {
+                    text-align: center;
+                    display: flex!important;
+                    margin-top: 40px;
+                    + span {
+                        display: block!important;
+                        width: 100%;
+                        text-align: right;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                    }
+                }
+                .item-links {
+                    margin-top: 30px;
+                    ul {
+                        justify-content: space-between;
+                        li {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+            .additional-details {
+                h5 {
+                    text-align: center;
+                    margin-top: 50px;
+                }
+                p,
+                li {
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {}
+
+.vessel-details,
+.business-details {
+    .side-bar {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        > div {
+            margin-bottom: 50px;
+        }
+    }
+    .tab-content {
+        .section {
+            .white-content-block;
+            margin-bottom: 25px;
+            padding: 25px;
+            .d-flex {
+                margin-top: 0.5rem;
+            }
+            label {
+                font-weight: bold;
+            }
+        }
+    }
+    .image {
+        position: relative;
+        margin-bottom: 36px;
+        .member-id {
+            position: absolute;
+            bottom: -36px;
+            right: 0;
+            left: 0;
+            text-align: center;
+            font-size: 24px;
+            line-height: 24px;
+            font-weight: bold;
+            color: #374861;
+        }
+    }
+    .content {
+        .item-details {
+            label {
+                font-weight: bold;
+            }
+            .info-box {
+                display: flex;
+                flex-flow: row wrap;
+                .info-item {
+                    flex: 1 0 calc(33.333% - 20px);
+                    max-width: calc(33.333% - 20px);
+                    margin-bottom: 15px;
+                }
+            }
+            .employees-list {
+                .info-item {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+    .actions > * {
+        margin-right: 0.5rem;
+    }
+    .vessel-photos {
+        a {
+            display: inline-block;
+            margin-bottom: 4px;
+        }
+    }
+    .vessel-attachments {
+        .file {
+            margin-right: 15px;
+            display: block;
+            width: 100px;
+            color: @bg-orange;
+            span {
+                display: block;
+                text-align: center;
+                i {
+                    font-size: 38px;
+                }
+            }
+        }
+    }
+}
+
+// Member Selector
+#members-listing {
+    .items-list {
+        .item {
+            .image {
+                position: relative;
+                .select-member {
+                    position: absolute;
+                    top: 50%;
+                    left: -8px;
+                    width: 20px;
+                    height: 20px;
+                    //display: flex;
+                    //align-items: center;
+                    //justify-content: center;
+                }
+            }
+            .badge {
+                background: #f8b42b;
+                padding: 1px 10px;
+                border-radius: 3px;
+                color: #fff;
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.5;
+            }
+            .tickets-count {
+                float: right;
+                margin-right: 20px;
+            }
+            .category {
+                position: static;
+                top: inherit;
+                right: inherit;
+                float: right;
+            }
+        }
+    }
+    &.view-selector-public {
+        #member-selector {
+            .selected-members-info,
+            .selected-members {
+                display: none !important;
+            }
+        }
+        .items-list {
+            .select-member {
+                display: none!important;
+            }
+        }
+    }
+    &.view-selector-private {
+        .selected-members {
+            flex-wrap: wrap;
+            .selected-item {
+                background: #f8b42b;
+                padding: 0px 5px;
+                border-radius: 3px;
+                color: #fff;
+                margin-right: 2px;
+                margin-bottom: 2px;
+                font-weight: normal;
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.member-selector-widget {
+    .white-content-block;
+    margin-bottom: 20px;
+    #member-selector {
+        .form-style;
+        .caption {
+            font-family: 'Futura Book';
+            font-size: 16px;
+            font-weight: bold;
+            color: #374861;
+        }
+        .inline {
+            display: flex;
+            align-items: center;
+        }
+        .column {
+            margin: 0 0 0 30px;
+        }
+        .selected-members-info {
+            .caption;
+            .inline;
+        }
+        .selected-members {
+            flex: 1;
+            .column;
+            .caption;
+            .inline;
+        }
+        .visibility {
+            .column;
+            .inline;
+            label {
+                margin: 0;
+            }
+        }
+        .actions {
+            .column;
+            .inline;
+            .btn {
+                padding: 5px 15px;
+            }
+        }
+    }
+}
+// End Member Selector

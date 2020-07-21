@@ -1,0 +1,37 @@
+.nav {
+    &.nav-tabs {
+        background: #fff;
+        margin-left: 0;
+        margin-bottom: 40px !important;
+
+        .nav-item {
+            margin: 0;
+
+            a {
+                color: #687487;
+                padding: 10px 25px 10px;
+                content: none;
+                border-radius: 0;
+                font-size: 18px;
+                height: 100%;
+
+                &:before {
+                    content: none;
+                }
+
+                &.btn-primary {
+                    font-weight: normal;
+                    background-color: @bg-orange;
+                    color: #fff;
+                    border: 0;
+                }
+
+                &:not(.btn-primary):hover,
+                &:not(.btn-primary):focus {
+                    color: @bg-orange;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}
